@@ -139,7 +139,8 @@ def search_1mg(search_term):
             headless=True
         )
 
-        page = browser.new_page()
+        page = browser.new_page(
+        user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36")
 
         try:
 
