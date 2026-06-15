@@ -213,6 +213,10 @@ def search_1mg(search_term):
                 
 
             html = page.content()
+            print("=" * 50)
+            print("HTML LENGTH:", len(html))
+            print(html[:2000])
+            print("=" * 50)
 
             # SAVE PAGE FOR INSPECTION
             with open(
